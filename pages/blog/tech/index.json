@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "blog-item": "../../../components/blog-item/index",
+    "loading": "../../../components/loading/index"
+  }
+}

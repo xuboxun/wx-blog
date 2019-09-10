@@ -1,0 +1,34 @@
+/* components/blog-item/index.wxss */
+.blog-item {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+.time {
+  color: #80848f;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.link-name {
+  color: #2d8cf0;
+  font-size: 16px;
+}
+.tags {
+  margin-top: 5px;
+  color: #80848f;
+}
+.tag {
+  font-size: 13px;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 3px;
+  background: #fafafa;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  padding: 0 10px;
+  transition: all .5s ease;
+  position: relative;
+}

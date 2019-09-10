@@ -1,0 +1,19 @@
+<!--pages/blog/serial/index.wxml-->
+<scroll-view class="serial" scroll-y>
+  <view class="scroll-content">
+    <view class="serial-item" wx:for="{{serialList}}" wx:key="{{index}}">
+      <navigator class="name" url="/pages/serial/index?name={{item.name}}">{{item.title}}</navigator>
+      <view class="update">
+        <text class="text">最近更新：</text>
+        <navigator
+          wx:if="{{item.recent}}"
+          class="title"
+          url="/pages/blog/detail/index?name={{item.recent.name}}"
+        >
+          {{item.recent.title}}
+        </navigator>
+        <text class="text" wx:else>没有更新</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

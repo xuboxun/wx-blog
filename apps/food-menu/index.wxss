@@ -1,0 +1,12 @@
+/* apps/food-menu/index.wxss */
+.food-app {
+  padding: 10px 20px;
+}
+.title {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+.m-hd {
+  font-size: 16px !important;
+}

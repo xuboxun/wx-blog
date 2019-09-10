@@ -1,0 +1,16 @@
+<!--components/blog-item/index.wxml-->
+<view class="blog-item">
+  <view class="time">{{blog.createTime}}</view>
+  <view class="link-name">
+    <navigator url="/pages/blog/detail/index?name={{blog.name}}">{{blog.title}}</navigator>
+  </view>
+  <view class="tags">
+    <navigator
+      wx:for="{{blog.tags}}"
+      wx:key="{{index}}"
+      class="tag"
+      url="/pages/tag/detail/index?name={{item.name}}">
+      {{item.title}}
+    </navigator>
+  </view>
+</view>

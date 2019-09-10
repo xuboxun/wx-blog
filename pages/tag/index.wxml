@@ -1,0 +1,27 @@
+<!--pages/tag/index.wxml-->
+<view class="tag">
+  <loading show="{{loading}}" />
+  <view class="search-wrapper">
+    <input
+      bindinput="handleInput"
+      type="text"
+      placeholder="搜索标签"
+      placeholder-class="input-placeholder"
+      class="search-input">
+    </input>
+    <view class="search-button" bindtap="handleSearch">
+      <icon type="search" size="16" />
+    </view>
+  </view>
+  <view class="tag-list-wrapper">
+    <view wx:for="{{tagList}}" wx:key="{{index}}" class="tag-item">
+      <navigator
+        url="/pages/tag/detail/index?name={{item.name}}"
+      >{{item.title}}</navigator>
+    </view>
+    <view wx:if="{{tagList.length === 0}}" class="empty">
+      <text>啊哦，没有你要找的东西哦</text>
+    </view>
+  </view>
+</view>
+

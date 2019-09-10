@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/blog/index",
+    "pages/tag/index",
+    "pages/about/index",
+    "pages/app/index",
+    "pages/blog/detail/index",
+    "pages/tag/detail/index",
+    "apps/food-menu/index",
+    "apps/novel-read/index",
+    "pages/search/index",
+    "pages/serial/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "思吾轩",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "##8c8c8c",
+    "selectedColor": "#595959",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-fill.png",
+        "text": "最新"
+      },
+      {
+        "pagePath": "pages/blog/index",
+        "iconPath": "images/file-text.png",
+        "selectedIconPath": "images/file-text-fill.png",
+        "text": "博客"
+      },
+      {
+        "pagePath": "pages/app/index",
+        "iconPath": "images/app.png",
+        "selectedIconPath": "images/app.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/tag/index",
+        "iconPath": "images/tags.png",
+        "selectedIconPath": "images/tags-fill.png",
+        "text": "标签"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-fill.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

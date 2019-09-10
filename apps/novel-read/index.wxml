@@ -1,0 +1,7 @@
+<!--apps/novel-read/index.wxml-->
+<view class="novel-app">
+  <loading show="{{loading}}" />
+  <view class="title">元尊·最新</view>
+  <view class="chapter">{{title}}</view>
+  <rich-text nodes="{{content}}"></rich-text>
+</view>

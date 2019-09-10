@@ -1,0 +1,11 @@
+<!--components/loading/index.wxml-->
+<view class="loading" wx-if="{{show}}">
+  <view class="mask"></view>
+  <view class="body">
+    <view class="loading-item"></view>
+    <view class="loading-item"></view>
+    <view class="loading-item"></view>
+    <view class="loading-item"></view>
+    <view class="loading-item"></view>
+  </view>
+</view>

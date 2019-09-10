@@ -1,0 +1,20 @@
+/* apps/novel-read/index.wxss */
+.novel-app {
+  padding: 10px 20px 100px 20px;
+}
+.title {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+.chapter {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.novelcontent {
+  color: #555;
+  font-size: 15px;
+}

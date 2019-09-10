@@ -1,0 +1,14 @@
+<!--pages/blog/tech/index.wxml-->
+<scroll-view class="tech" scroll-y bindscrolltolower="handleScrollToBottom">
+  <view class="scroll-content">
+    <loading show="{{loading}}" />
+    <view class="tech-list">
+      <blog-item
+        wx:for="{{blogList}}"
+        wx:key="{{index}}"
+        blog="{{item}}"
+      />
+    </view>
+    <view class="reach-bottom" wx:if="{{reachBottom}}">再往下也没有了哦~</view>
+  </view>
+</scroll-view>

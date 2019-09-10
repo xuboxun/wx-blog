@@ -1,0 +1,18 @@
+<!--pages/tag/detail/index.wxml-->
+<view class="tag-detail">
+  <loading show="{{loading}}" />
+  <view class="title">{{detail.title}}</view>
+  <view class="desc">{{detail.description}}</view>
+
+  <view class="blogs">
+    <view class="blogs-title">博客列表</view>
+    <view class="list">
+      <view wx:for="{{detail.blogs}}" wx:key="{{index}}" class="blog-item">
+        <view class="time">{{item.createTime}}</view>
+        <navigator
+          class="name"
+          url="/pages/blog/detail/index?name={{item.name}}">{{item.title}}</navigator>
+      </view>
+    </view>
+  </view>
+</view>

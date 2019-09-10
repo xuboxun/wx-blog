@@ -1,0 +1,14 @@
+<!--pages/blog/culture/index.wxml-->
+<scroll-view class="culture" scroll-y>
+  <view class="scroll-content">
+    <loading show="{{loading}}" />
+    <view class="culture-list">
+      <blog-item
+        wx:for="{{blogList}}"
+        wx:key="{{index}}"
+        blog="{{item}}"
+      />
+    </view>
+    <view class="reach-bottom" wx:if="{{reachBottom}}">再往下也没有了哦~</view>
+  </view>
+</scroll-view>

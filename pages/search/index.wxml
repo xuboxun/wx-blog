@@ -1,0 +1,30 @@
+<!--pages/search/index.wxml-->
+<view class="search">
+  <view class="fixed-content">
+    <view class="search-header">
+      <icon size="18" type="search" class="search-icon" />
+      <input
+        class="search-input"
+        placeholder-class="input-placeholder"
+        focus="{{true}}"
+        adjust-position="{{false}}"
+        bindinput="handleSearch"
+      />
+    </view>
+  </view>
+  <view class="body-content">
+    <scroll-view
+      class="search-result"
+      scroll-y
+    >
+      <view class="result-list">
+        <view wx:for="{{result}}" wx:key="{{index}}" style="height: 100px;">
+          {{item}}
+        </view>
+        <view wx:if="{{result.length === 0}}" class="empty">
+          <text>啊哦，没有你要找的东西哦</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

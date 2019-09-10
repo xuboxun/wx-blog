@@ -1,0 +1,46 @@
+/**index.wxss**/
+.index {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 200px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.recent-list-wrapper {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.recent-title {
+  font-size: 18px;
+  line-height: 40px;
+  color: #515a6e;
+  border-bottom: 1px solid #e8eaec;
+  margin-bottom: 15px;
+}
+
+.blog-item {
+  margin-bottom: 15px;
+}
+.type-time {
+  color: #808695;
+  line-height: 25px;
+  font-size: 14px;
+}
+.link-name {
+  color: #2d8cf0;
+  font-size: 16px;
+}

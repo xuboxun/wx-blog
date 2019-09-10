@@ -1,0 +1,36 @@
+/* pages/blog/serial/index.wxss */
+.serial {
+  width: 100%;
+  height: 100%;
+}
+.scroll-content {
+  width: 100%;
+  padding: 10px 20px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+.serial-item {
+  width: 100%;
+  min-height: 120px;
+  box-shadow: 0 0 5px #dcdee2;
+  margin-bottom: 18px;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+.name {
+  font-size: 17px;
+  color: #2d8cf0;
+}
+.update {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.text {
+  color: #888;
+}
+.title {
+  display: inline;
+  color: #2d8cf0;
+}

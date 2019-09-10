@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tech": "./tech/index",
+    "culture": "./culture/index",
+    "serial": "./serial/index"
+  }
+}

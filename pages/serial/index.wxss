@@ -1,0 +1,56 @@
+/* pages/serial/index.wxss */
+.serial-detail {
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+.title {
+  height: 100px;
+  line-height: 100px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #17233d;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.desc-title {
+  line-height: 40px;
+  border-bottom: 1px solid #e8eaec;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.desc-content {
+  line-height: 30px;
+  font-size: 14px;
+  color: #515a6e;
+}
+.blogs {
+  margin-top: 50px;
+}
+.blogs-title {
+  line-height: 40px;
+  border-bottom: 1px solid #e8eaec;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.blog-item {
+  margin-bottom: 15px;
+}
+.time {
+  line-height: 20px;
+  font-size: 13px;
+  color: #808695;
+}
+.name {
+  font-size: 16px;
+  color: #2d8cf0;
+}

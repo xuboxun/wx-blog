@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="index">
+  <loading show="{{loading}}" />
+  <swiper
+    class="swiper-wrapper"
+    indicator-dots="{{false}}"
+    autoplay="{{true}}"
+    interval="{{5000}}"
+    duration="{{1000}}"
+  >
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="recent-list-wrapper">
+    <view class="recent-title">
+      <text>最近更新</text>
+    </view>
+    <view class="recent-list">
+      <view wx:for="{{ blogList }}" wx:key="{{ index }}" class="blog-item">
+        <view class="type-time">
+          <text>{{item.type}}</text>
+          <text> | </text>
+          <text>{{item.createTime}}</text>
+        </view>
+        <view class="link-name">
+            <navigator
+              url="/pages/blog/detail/index?name={{item.name}}"
+            >
+              {{ item.title }}
+            </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

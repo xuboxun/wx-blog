@@ -1,0 +1,16 @@
+<!--pages/about/index.wxml-->
+<view class="about">
+  <view class="header">
+    <text>关于我</text>
+  </view>
+  <view class="photo-wrapper">
+    <image src="../../images/photo.jpg" class="photo" />
+  </view>
+  <view class="info-wrapper">
+    <view wx:for="{{intro}}" wx:key="{{index}}" class="info-item">
+      <text class="key">{{item.key}}：</text>
+      {{item.value}}
+    </view>
+  </view>
+</view>
+

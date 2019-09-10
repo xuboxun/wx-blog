@@ -1,0 +1,65 @@
+/* pages/blog/detail/index.wxss */
+@import "../../../lib/github-markdown.wxss";
+
+.detail {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.title, .time {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  line-height: 30px;
+  color: #17233d;
+  word-break: break-word;
+}
+.time {
+  font-size: 13px;
+  color: #808695;
+}
+
+
+.content-wrapper {
+  width: 100%;
+}
+
+.markdown-body {
+  color: #595959;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.markdown-body li {
+    list-style-type: inherit;
+}
+
+.markdown-toc-container {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.markdown-toc-container ul {
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.toc-container-header {
+  height: 40px;
+  line-height: 45px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}

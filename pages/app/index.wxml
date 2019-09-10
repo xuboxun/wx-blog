@@ -1,0 +1,22 @@
+<!--pages/app/index.wxml-->
+<view class="apps">
+  <view class="app-list">
+    <view wx:for="{{apps}}" wx:key="{{index}}" class="app-item-wrapper">
+      <view class="app-item-content">
+        <view class="app-item">
+          <navigator
+            class="app-item-title"
+            wx:if="{{item.link !== ''}}"
+            url="{{item.link}}"
+          >{{item.title}}</navigator>
+          <text
+            class="app-item-title"
+            wx:if="{{item.link === ''}}"
+            bindtap="tapInvalidApp"
+          >{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,6 @@
+<!--apps/food-menu/index.wxml-->
+<view class="food-app">
+  <loading show="{{loading}}" />
+  <view class="title">菜单</view>
+  <rich-text nodes="{{content}}"></rich-text>
+</view>

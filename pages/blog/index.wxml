@@ -1,0 +1,44 @@
+<!--pages/blog/index.wxml-->
+<view class="blog-index">
+  <view class="fixed-content">
+    <view class="search-header" bindtap="enterSearch">
+      <icon size="18" type="search" class="search-icon" />
+      <view class="search-input">搜索</view>
+    </view>
+    <view class="taber-wrapper">
+      <view
+        wx:for="{{tabs}}"
+        wx:key="{{index}}"
+        data-index="{{index}}"
+        bindtap="handleClickTab"
+        class="{{ activeIndex === index ? 'taber-item taber-active' : 'taber-item'}}">
+        <view class="taber-title">{{item.title}}</view>
+      </view>
+      <view class="taber-slider-wrapper">
+        <view
+          class="taber-slider"
+          style="{{finish? 'left: calc(100% / 3 * ' + activeIndex + ')' : 'left: calc(100% / 3 * ' + lastIndex + ');transform: translate(' + dx + 'px, 0)'}}">
+          <!-- left: calc(100% / 3 * {{lastIndex}});  -->
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="body-content">
+    <swiper
+      class="tab-content"
+      current="{{activeIndex}}"
+      bindchange="handleChangeTab"
+      bindtransition="handleMove"
+      bindanimationfinish="handleFinish">
+      <block wx:for="{{tabs}}" wx:key="{{index}}">
+        <swiper-item class="tab-page-wrapper">
+          <view class="tab-page">
+            <tech wx:if="{{item.component === 'tech'}}" />
+            <culture wx:elif="{{item.component === 'culture'}}" />
+            <serial wx:else />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>

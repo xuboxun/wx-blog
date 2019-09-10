@@ -1,0 +1,25 @@
+<!--pages/serial/index.wxml-->
+<view class="serial-detail">
+  <loading show="{{loading}}" />
+  <view class="title">{{detail.title}}</view>
+
+  <image src="https://www.xuboxun.site/assets/images/sing.jpg" class="image"></image>
+
+  <view class="desc">
+    <view class="desc-title">专栏简介</view>
+    <view class="desc-content">{{detail.description}}</view>
+  </view>
+
+  <view class="blogs">
+    <view class="blogs-title">博客列表</view>
+    <view class="list">
+      <view wx:for="{{detail.blogs}}" wx:key="{{index}}" class="blog-item">
+        <view class="time">{{item.createTime}}</view>
+        <navigator
+          class="name"
+          url="/pages/blog/detail/index?name={{item.name}}">{{item.title}}</navigator>
+      </view>
+    </view>
+  </view>
+</view>
+
